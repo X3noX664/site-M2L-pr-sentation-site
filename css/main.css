@@ -1,0 +1,44 @@
+body {
+    margin:0;
+    padding: 0%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header div {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 1em 2em 1em 2em;
+}
+.logo_div {
+    width: auto;
+    height: 100%;
+}
+
+.logo {
+    margin: 10%
+}
+
+.accueil_image_top {
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+
+.img80pourcent {
+    width: 80%;
+    height: 100%;
+    padding-left: 10%;
+} 
