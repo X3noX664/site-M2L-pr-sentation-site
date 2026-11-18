@@ -4,7 +4,8 @@
  * Auteur  : Enzo Lacroix
  * Date    : 18/11/2026
  * Rôle    : feuille de style commune du site de la Maison des Ligues de Lorraine
- *           (page d'accueil index-enzo.html et page hockey-matheo.html).
+ *           (page d'accueil index-enzo.html, pages hockey-matheo.html
+ *           et rugby-a-15-etienne.html).
  *           Toute la mise en forme est faite ici, jamais dans le HTML.
  */
 
@@ -228,6 +229,40 @@ form button:hover {
 .bouton_haut:hover {
     background-color: #d1495b;
     color: #ffffff;
+}
+
+/* ========== 9 bis. PAGE RUGBY À 15 (rugby-a-15-etienne.html) ========== */
+/* Cette page n'a pas de balise <main> : les sections sont directement dans
+   le <body>. On leur donne donc la même largeur centrée que dans <main>. */
+body > section {
+    box-sizing: border-box;
+    width: calc(100% - 2em);
+    max-width: 1000px;
+    margin: 1.5em auto;
+}
+
+/* Le logo est dans une <div class="div_logo"> à l'intérieur de l'en-tête */
+.div_logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Dans la section "regles", le <h2> contient un paragraphe entier :
+   on l'affiche comme du texte normal et non comme un grand titre */
+#regles h2 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #222222;
+}
+
+/* Les <li> des catégories sont directement dans la section (sans <ul>) */
+section > li {
+    margin-left: 1.5em;
+}
+
+/* Le planning à 8 colonnes défile horizontalement sur petit écran */
+#planing {
+    overflow-x: auto;
 }
 
 /* ========== 10. PIED DE PAGE ========== */
