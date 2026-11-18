@@ -73,6 +73,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #12355b;
+
 }
 
 nav a {
@@ -82,10 +83,8 @@ nav a {
     transition: background-color 0.3s;
 }
 
-/* Le menu change de couleur au survol */
-nav a:hover {
-    background-color: #d1495b;
-    color: #ffffff;
+#nav_mouseOver {
+     max-height: 300px;
 }
 
 /* ========== 4. IMAGES ========== */
