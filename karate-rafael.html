@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>karaté</title>
 </head> 
 <body>
   <header id="haut">
       <div>
+          <img class="logo" src="img/logo.png" alt="Logo de la Maison des Ligues de Lorraine">
           <a href="index-enzo.html">Page d'accueil</a>
           <a href="karate-rafael.html">Karate</a>
           <a href="hockey-matheo.html">Hockey</a>
-          <a href="rugby-a-15-etienne.html">Rubgy à 15</a>
+          <a href="rugby-a-15-etienne.html">Rugby à 15</a>
       </div>
     </header>
     
@@ -28,13 +29,15 @@
     </nav>
 
 
-    <h2 id="historique">historique du karaté</h2>
+    <main>
+    <section id="historique">
+    <h2>Historique du karaté</h2>
     <p> <strong>Source :</strong></p> 
         <ul>
         <li><a href="https://www.hadjime.com/content/43-karate-histoire-presentation-du-karate">Hadjime</a></li>
         </ul>
             
-            Le karaté est originaire de l'archipel d’Okinawa situé au sud du Japon. 
+            <p>Le karaté est originaire de l'archipel d’Okinawa situé au sud du Japon. 
             Les échanges commerciaux entre la Chine et l’archipel étaient nombreux. L’influence des techniques de combat chinoises dans le karaté est donc indéniable.
             Au ébut du XVIIème siècle, le Japon interdit l’usage des armes à Okinawa. 
             Les premières techniques du karaté moderne ont alors vu le jour, sous le nom d’”Okinawa-te”.
@@ -42,8 +45,10 @@
             Ses démonstrations ont rencontré un franc succès auprès du public et plus particulièrement auprès du prince héritier Hirohito. C’est le fondateur du judo, Jigoro Kano, qui invita Gichin Funakoshi à enseigner le karaté dans son dojo.
             Le karaté a progressivement gagné en popularité au Japon puis à travers le monde. 
             C’est d’ailleurs aujourd’hui l’art martial le plus pratiqué au monde.</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+    </section>
 
-<p><section id="regles">
+<section id="regles">
   <h2>Les Règles du karaté</h2>
 
   <div class="sources">
@@ -97,22 +102,65 @@
     <li>Combats de 1 min 30 pour les poussins, pupilles et benjamins, et de 2 minutes pour les minimes.</li>
     <li>Aucun contact au visage et au cou, même léger.</li>
   </ul>
-</section></p>
+  <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
 
-<p><section id="entraineurs">
-    <h2>Les entraineurs</h2>
-    
-    <img src="" alt="">
+<section id="entraineurs">
+    <h2>Les entraîneurs</h2>
+    <p>Noms et diplômes des entraîneurs. [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
+<section id="categories">
+    <h2>Les catégories</h2>
+    <p>Poussins, pupilles, benjamins, minimes, cadets, juniors, seniors. [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
+<section id="lieu">
+    <h2>Lieu d'entraînement</h2>
+    <p>Adresse du dojo. [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
-    
+<section id="jours">
+    <h2>Jours d'entraînement</h2>
+    <p>Jours et horaires par catégorie. [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
-</section></p>
+<section id="calendrier">
+    <h2>Calendrier des matchs</h2>
+    <p>Tableau des compétitions à venir. [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
+<section id="video">
+    <h2>Le karaté en vidéo</h2>
+    <!-- [À COMPLÉTER] : fichier vidéo dans video/ ou lien en ligne -->
+    <video class="video_sport" controls>
+        <source src="video/karate.mp4" type="video/mp4">
+        Votre navigateur ne sait pas lire cette vidéo.
+    </video>
+    <p><a href="https://www.youtube.com/" target="_blank">Voir une vidéo de karaté en ligne [À COMPLÉTER : lien]</a></p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
 
+<section id="contact">
+    <h2>Adresse de contact</h2>
+    <p>E-mail : <a href="mailto:contact@monclub.fr">contact@monclub.fr</a> [À COMPLÉTER]</p>
+    <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+</section>
+</main>
 
+<footer>
+    <p>Karaté - Maison des Ligues de Lorraine</p>
+    <p><a href="#menu">Retour au menu</a> | <a href="#haut">Retour en haut</a></p>
+</footer>
 
+<a href="#haut" id="bouton_haut" class="bouton_haut">⬆ Haut</a>
+
+<script src="js/main.js"></script>
 </body>
 </html>
