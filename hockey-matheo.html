@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
     Fichier : hockey-matheo.html
@@ -7,19 +8,35 @@
     Rôle    : page du hockey sur glace : historique, règles, entraîneurs,
               catégories, lieu, jours, calendrier et contact.
 -->
+
+<!-- Début du document HTML, avec le français comme langue principale -->
 <html lang="fr">
 
 <head>
+    <!-- Permet d'afficher correctement les caractères spéciaux et les accents -->
     <meta charset="UTF-8">
+
+    <!-- Permet d'adapter la page aux différentes tailles d'écran (ordinateur, téléphone, tablette) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Définit le titre qui apparaît dans l'onglet du navigateur -->
     <title>Hockey sur glace - Maison des Ligues de Lorraine</title>
+
+    <!-- Relie le fichier HTML à la feuille de style CSS pour gérer l'apparence du site -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+    <!-- EN-TÊTE DU SITE : contient le logo et les liens vers les autres pages -->
     <header id="haut">
         <div>
+            <!-- Affiche le logo de la Maison des Ligues de Lorraine -->
+            <!-- class="logo" permet de modifier son apparence avec le CSS -->
+            <!-- src indique le chemin de l'image et alt décrit l'image -->
             <img class="logo" src="img/logo.png" alt="Logo de la Maison des Ligues de Lorraine">
+
+            <!-- Liens permettant de naviguer entre les différentes pages du site -->
             <a href="index-enzo.html">Page d'accueil</a>
             <a href="karate-rafael.html">Karate</a>
             <a href="hockey-matheo.html">Hockey</a>
@@ -27,8 +44,9 @@
         </div>
     </header>
 
-    <!-- MENU DES RUBRIQUES -->
+    <!-- MENU DES RUBRIQUES : permet d'accéder directement aux différentes sections de la page -->
     <nav id="menu">
+        <!-- Chaque lien avec # renvoie vers une section possédant le même identifiant -->
         <a href="#historique">Historique</a>
         <a href="#regles">Règles</a>
         <a href="#entraineurs">Entraîneurs</a>
@@ -39,13 +57,18 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- CONTENU PRINCIPAL : regroupe toutes les rubriques consacrées au hockey -->
     <main>
-    <!-- 1. HISTORIQUE -->
+
+    <!-- 1. HISTORIQUE : présente les origines et l'évolution du hockey sur glace -->
     <section id="historique">
+        <!-- Titre de la première rubrique -->
         <h2>1. Historique du hockey sur glace</h2>
 
+        <!-- Image illustrant l'histoire du hockey sur glace -->
         <img src="img/hockey1.jpg" alt="hockey_histoire">
 
+        <!-- Paragraphes présentant les origines du hockey -->
         <p>
             Le hockey sur glace est un sport collectif qui s'est
             développé au XIXe siècle au Canada.
@@ -58,20 +81,26 @@
             en 1920 et le hockey féminin en 1998.
             Aujourd'hui, il est pratiqué dans de nombreux pays.
         </p>
+
+        <!-- Lien permettant de retourner au menu principal des rubriques -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 2. REGLES -->
+    <!-- 2. REGLES : explique les principales règles du hockey sur glace -->
     <section id="regles">
+        <!-- Titre de la deuxième rubrique -->
         <h2>2. Les règles du hockey sur glace</h2>
 
+        <!-- Image illustrant les règles du hockey -->
         <img src="img/hockey2.jpg" alt="hockey_regles">
 
+        <!-- Présentation générale du fonctionnement du jeu -->
         <p>
             Le hockey sur glace oppose deux équipes qui doivent
             marquer des buts dans le camp adverse.
         </p>
 
+        <!-- Liste à puces présentant les principales règles du sport -->
         <ul>
             <li>Chaque équipe possède 6 joueurs sur la glace.</li>
             <li>Un match comporte 3 périodes de 20 minutes.</li>
@@ -80,46 +109,61 @@
             <li>Les contacts dangereux sont interdits.</li>
             <li>L'équipe qui marque le plus de buts gagne.</li>
         </ul>
+
+        <!-- Permet de revenir rapidement au menu -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 3. ENTRAINEURS -->
+    <!-- 3. ENTRAINEURS : présente les différents rôles des entraîneurs -->
     <section id="entraineurs">
+        <!-- Titre de la troisième rubrique -->
         <h2>3. Les entraîneurs</h2>
 
+        <!-- Image représentant les entraîneurs de hockey -->
         <img src="img/hockey3.jpg" alt="hockey_entraineur">
-        
+
+        <!-- Explique le rôle général des entraîneurs -->
         <p>
             Les entraîneurs apprennent aux joueurs les techniques
             du hockey et les préparent aux compétitions.
         </p>
 
+        <!-- Liste des différents types d'entraîneurs et de leurs missions -->
         <ul>
             <li>Entraîneur principal : organise les séances.</li>
             <li>Entraîneur adjoint : aide les joueurs à progresser.</li>
             <li>Entraîneur des gardiens : entraîne les gardiens de but.</li>
         </ul>
 
+        <!-- Indique que les noms des entraîneurs devront être ajoutés -->
         <p>
             Les noms des entraîneurs sont à compléter selon le club choisi.
         </p>
+
+        <!-- Lien de retour vers le menu des rubriques -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 4. CATEGORIES -->
+    <!-- 4. CATEGORIES : présente les différentes catégories d'âge des joueurs -->
     <section id="categories">
+        <!-- Titre de la quatrième rubrique -->
         <h2>4. Les catégories</h2>
 
+        <!-- Introduction du tableau des catégories -->
         <p>
             Les joueurs sont répartis selon leur âge.
             Voici quelques exemples de catégories :
         </p>
 
+        <!-- Tableau permettant de comparer les catégories et les âges -->
         <table>
+            <!-- Première ligne contenant les titres des colonnes -->
             <tr>
                 <th>Catégorie</th>
                 <th>Âge indicatif</th>
             </tr>
+
+            <!-- Chaque ligne tr contient deux cellules td -->
             <tr>
                 <td>U7</td>
                 <td>Moins de 7 ans</td>
@@ -149,20 +193,26 @@
                 <td>Adultes</td>
             </tr>
         </table>
+
+        <!-- Lien pour retourner au menu principal -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 5. LIEU -->
+    <!-- 5. LIEU : donne des informations sur l'endroit où se déroulent les entraînements -->
     <section id="lieu">
+        <!-- Titre de la cinquième rubrique -->
         <h2>5. Lieu d'entraînement</h2>
 
+        <!-- Image représentant le lieu de pratique du hockey -->
         <img src="img/hockey4.jpg" alt="hockey_lieux">
-        
+
+        <!-- Présentation du lieu d'entraînement -->
         <p>
             Les entraînements de hockey sur glace se déroulent
             dans une patinoire.
         </p>
 
+        <!-- Liste des équipements nécessaires dans une patinoire -->
         <ul>
             <li>Une surface de glace.</li>
             <li>Des vestiaires pour les joueurs.</li>
@@ -170,25 +220,34 @@
             <li>Des bancs pour les remplaçants.</li>
         </ul>
 
+        <!-- strong permet de mettre le mot Adresse en gras -->
         <p><strong>Adresse :</strong> À compléter selon le club.</p>
+
+        <!-- Lien de retour vers le menu -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 6. JOURS D'ENTRAINEMENT -->
+    <!-- 6. JOURS D'ENTRAINEMENT : indique les jours et les horaires des séances -->
     <section id="jours">
+        <!-- Titre de la sixième rubrique -->
         <h2>6. Jours d'entraînement</h2>
 
+        <!-- Explique que les horaires varient selon les catégories -->
         <p>
             Les entraînements sont organisés en fonction
             de l'âge et du niveau des joueurs.
         </p>
 
+        <!-- Tableau présentant les jours et les horaires d'entraînement -->
         <table>
+            <!-- En-têtes des trois colonnes du tableau -->
             <tr>
                 <th>Catégorie</th>
                 <th>Jour</th>
                 <th>Horaires</th>
             </tr>
+
+            <!-- Horaires des entraînements pour chaque catégorie -->
             <tr>
                 <td>U9</td>
                 <td>Mercredi</td>
@@ -215,26 +274,35 @@
                 <td>20h - 22h</td>
             </tr>
         </table>
+
+        <!-- Permet de retourner au menu des rubriques -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 7. CALENDRIER DES MATCHS -->
+    <!-- 7. CALENDRIER DES MATCHS : présente les dates des prochaines rencontres -->
     <section id="calendrier">
+        <!-- Titre de la septième rubrique -->
         <h2>7. Calendrier des matchs</h2>
-        
+
+        <!-- Image illustrant une rencontre de hockey -->
         <img src="img/hockey5.jpg" alt="hockey_match">
-        
+
+        <!-- Présentation du calendrier -->
         <p>
             Voici un exemple de calendrier des prochaines rencontres.
         </p>
 
+        <!-- Tableau regroupant les informations des matchs -->
         <table>
+            <!-- En-têtes des quatre colonnes -->
             <tr>
                 <th>Date</th>
                 <th>Rencontre</th>
                 <th>Lieu</th>
                 <th>Heure</th>
             </tr>
+
+            <!-- Informations sur les différentes rencontres -->
             <tr>
                 <td>15/11/2026</td>
                 <td>Club A - Club B</td>
@@ -261,61 +329,99 @@
             </tr>
         </table>
 
+        <!-- em permet de mettre le message en évidence, généralement en italique -->
         <p>
             <em>Attention : ces rencontres sont fictives.</em>
         </p>
+
+        <!-- Lien pour revenir au menu -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- VIDÉO -->
+    <!-- SECTION VIDEO : permet de regarder une vidéo de présentation du hockey -->
     <section id="video">
+        <!-- Titre de la section vidéo -->
         <h2>Le hockey en vidéo</h2>
+
+        <!-- Petit texte de présentation de la vidéo -->
         <p>Une vidéo pour se faire une idée du hockey sur glace.</p>
-        
+
+        <!-- Intègre une vidéo directement dans la page -->
+        <!-- controls affiche les boutons lecture, pause et volume -->
         <video class="video_sport" controls>
+            <!-- Indique le chemin du fichier vidéo et son format MP4 -->
             <source src="video/hockey.mp4" type="video/mp4">
+
+            <!-- Message affiché si le navigateur ne sait pas lire la vidéo -->
             Votre navigateur ne sait pas lire cette vidéo.
         </video>
-        <p><a href="https://www.youtube.com/watch?v=FbCptzPuNic" target="_blank">Voir une vidéo de hockey en ligne</a></p>
+
+        <!-- Lien externe vers une vidéo YouTube -->
+        <!-- target="_blank" permet d'ouvrir le lien dans un nouvel onglet -->
+        <p>
+            <a href="https://www.youtube.com/watch?v=FbCptzPuNic" target="_blank">
+                Voir une vidéo de hockey en ligne
+            </a>
+        </p>
+
+        <!-- Lien pour retourner au menu -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
-    <!-- 8. CONTACT -->
+    <!-- 8. CONTACT : permet aux visiteurs de contacter le club par e-mail -->
     <section id="contact">
+        <!-- Titre de la dernière rubrique -->
         <h2>8. Adresse de contact (mail)</h2>
 
+        <!-- Explique pourquoi et comment contacter le club -->
         <p>
             Pour obtenir des renseignements sur les inscriptions,
             les entraînements ou les compétitions, vous pouvez
             contacter le club par courrier électronique.
         </p>
 
+        <!-- Présentation de l'adresse e-mail du club -->
         <p>
+            <!-- strong met l'intitulé E-mail en gras -->
             <strong>E-mail :</strong>
+
+            <!-- mailto permet d'ouvrir le logiciel de messagerie pour envoyer un e-mail -->
             <a href="mailto:contact@monclub.fr">
                 contact@hockey.fr
             </a>
         </p>
 
+        <!-- Indique le sujet conseillé pour le message -->
         <p>
             <strong>Objet :</strong> Demande de renseignements
             ou inscription au hockey sur glace.
         </p>
+
+        <!-- Lien de retour vers le menu -->
         <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
     </section>
 
     </main>
 
-    <!-- PIED DE PAGE -->
+    <!-- PIED DE PAGE : contient le nom du site et des liens de navigation -->
     <footer>
+        <!-- Nom de la page et de l'organisme -->
         <p>Hockey sur glace - Maison des Ligues de Lorraine</p>
-        <p><a href="#menu">Retour au menu</a> | <a href="#haut">Retour en haut</a></p>
+
+        <!-- Deux liens permettant de retourner au menu ou en haut de la page -->
+        <p>
+            <a href="#menu">Retour au menu</a> |
+            <a href="#haut">Retour en haut</a>
+        </p>
     </footer>
 
-    <!-- BOUTON RETOUR EN HAUT : affiché par js/main.js -->
+    <!-- BOUTON RETOUR EN HAUT : peut être affiché ou masqué par le JavaScript -->
+    <!-- href="#haut" permet de remonter en haut de la page -->
+    <!-- id et class permettent de le cibler avec le CSS et le JavaScript -->
     <a href="#haut" id="bouton_haut" class="bouton_haut">⬆ Haut</a>
 
+    <!-- RELIAGE AVEC JAVASCRIPT : charge le fichier qui gère les fonctionnalités interactives -->
     <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>
