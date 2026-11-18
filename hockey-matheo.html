@@ -1,33 +1,48 @@
+
 <!DOCTYPE html>
 <!--
     Fichier : hockey-matheo.html
-    Version : 1.0
+    Version : 1.1
     Auteur  : Mathéo (base), ajustements Enzo Lacroix
     Date    : 18/11/2026
-    Rôle    : page du hockey sur glace : historique, règles, entraîneurs,
-              catégories, lieu, jours, calendrier et contact.
+    Rôle    : page de présentation du hockey sur glace.
+             Présentation du club, des entraîneurs, des catégories,
+             des entraînements, des matchs et des contacts.
+    Remarque : les noms, coordonnées et clubs présentés sont fictifs.
 -->
+
 <html lang="fr">
 
 <head>
+    <!-- Définit l'encodage pour afficher correctement les accents -->
     <meta charset="UTF-8">
+
+    <!-- Adapte la page aux écrans des téléphones et tablettes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre affiché dans l'onglet du navigateur -->
     <title>Hockey sur glace - Maison des Ligues de Lorraine</title>
+
+    <!-- Liaison avec la feuille de style CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+    <!-- EN-TÊTE : logo et navigation entre les différentes pages -->
     <header id="haut">
         <div>
-            <img class="logo" src="img/logo.png" alt="Logo de la Maison des Ligues de Lorraine">
+            <img class="logo" src="img/logo.png"
+                 alt="Logo de la Maison des Ligues de Lorraine">
+
             <a href="index-enzo.html">Page d'accueil</a>
-            <a href="karate-rafael.html">Karate</a>
+            <a href="karate-rafael.html">Karaté</a>
             <a href="hockey-matheo.html">Hockey</a>
             <a href="rugby-a-15-etienne.html">Rugby à 15</a>
         </div>
     </header>
 
-    <!-- MENU DES RUBRIQUES -->
+    <!-- MENU : liens vers les différentes rubriques de la page -->
     <nav id="menu">
         <a href="#historique">Historique</a>
         <a href="#regles">Règles</a>
@@ -36,286 +51,463 @@
         <a href="#lieu">Lieu</a>
         <a href="#jours">Entraînements</a>
         <a href="#calendrier">Matchs</a>
+        <a href="#video">Vidéo</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- CONTENU PRINCIPAL DU SITE -->
     <main>
-    <!-- 1. HISTORIQUE -->
-    <section id="historique">
-        <h2>Historique du hockey sur glace</h2>
 
-        <img src="img/hockey1.jpg" alt="hockey_histoire">
+        <!-- 1. HISTORIQUE DU HOCKEY -->
+        <section id="historique">
+            <h2>1. Historique du hockey sur glace</h2>
 
-        <p>
-            Le hockey sur glace est un sport collectif qui s'est
-            développé au XIXe siècle au Canada.
-            Le premier match organisé selon des règles modernes
-            a eu lieu en 1875 à Montréal.
-        </p>
+            <!-- Photographie illustrant le hockey -->
+            <img src="img/hockey1.jpg" alt="Match de hockey sur glace">
 
-        <p>
-            Le hockey masculin est devenu un sport olympique
-            en 1920 et le hockey féminin en 1998.
-            Aujourd'hui, il est pratiqué dans de nombreux pays.
-        </p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+            <p>
+                Le hockey sur glace est un sport collectif qui s'est
+                développé au XIXe siècle au Canada.
+                Le premier match organisé selon des règles modernes
+                a eu lieu en 1875 à Montréal.
+            </p>
 
-    <!-- 2. REGLES -->
-    <section id="regles">
-        <h2>Les règles du hockey sur glace</h2>
+            <p>
+                Le hockey masculin est devenu un sport olympique
+                en 1920 et le hockey féminin en 1998.
+                Aujourd'hui, il est pratiqué dans de nombreux pays,
+                notamment au Canada, en Finlande, en Suède et en France.
+            </p>
 
-        <img src="img/hockey2.jpg" alt="hockey_regles">
+            <p>
+                En Lorraine, le hockey sur glace est également pratiqué
+                dans plusieurs clubs. Il permet aux jeunes et aux adultes
+                de découvrir un sport collectif basé sur la vitesse,
+                la technique et l'esprit d'équipe.
+            </p>
 
-        <p>
-            Le hockey sur glace oppose deux équipes qui doivent
-            marquer des buts dans le camp adverse.
-        </p>
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
 
-        <ul>
-            <li>Chaque équipe possède 6 joueurs sur la glace.</li>
-            <li>Un match comporte 3 périodes de 20 minutes.</li>
-            <li>Les joueurs utilisent une crosse pour déplacer le palet.</li>
-            <li>Le gardien protège son but.</li>
-            <li>Les contacts dangereux sont interdits.</li>
-            <li>L'équipe qui marque le plus de buts gagne.</li>
-        </ul>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+        <!-- 2. REGLES DU HOCKEY -->
+        <section id="regles">
+            <h2>2. Les règles du hockey sur glace</h2>
 
-    <!-- 3. ENTRAINEURS -->
-    <section id="entraineurs">
-        <h2>Les entraîneurs</h2>
+            <img src="img/hockey2.jpg" alt="Joueurs de hockey sur glace">
 
-        <img src="img/hockey3.jpg" alt="hockey_entraineur">
-        
-        <p>
-            Les entraîneurs apprennent aux joueurs les techniques
-            du hockey et les préparent aux compétitions.
-        </p>
+            <p>
+                Le hockey sur glace oppose deux équipes qui doivent
+                marquer des buts dans le camp adverse.
+                Les joueurs se déplacent sur des patins et utilisent
+                une crosse pour contrôler le palet.
+            </p>
 
-        <ul>
-            <li>Entraîneur principal : organise les séances.</li>
-            <li>Entraîneur adjoint : aide les joueurs à progresser.</li>
-            <li>Entraîneur des gardiens : entraîne les gardiens de but.</li>
-        </ul>
+            <!-- Liste des principales règles -->
+            <ul>
+                <li>Chaque équipe possède 6 joueurs sur la glace,
+                    dont un gardien.</li>
+                <li>Un match comporte 3 périodes de 20 minutes.</li>
+                <li>Les joueurs utilisent une crosse pour déplacer le palet.</li>
+                <li>Le gardien protège son but.</li>
+                <li>Les contacts dangereux et les gestes interdits
+                    sont sanctionnés.</li>
+                <li>Les changements de joueurs peuvent être effectués
+                    pendant le jeu.</li>
+                <li>L'équipe qui marque le plus de buts gagne le match.</li>
+            </ul>
 
-        <p>
-            Les noms des entraîneurs sont à compléter selon le club choisi.
-        </p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
 
-    <!-- 4. CATEGORIES -->
-    <section id="categories">
-        <h2>Les catégories</h2>
+        <!-- 3. PRESENTATION DES ENTRAINEURS -->
+        <section id="entraineurs">
+            <h2>3. Les entraîneurs</h2>
 
-        <p>
-            Les joueurs sont répartis selon leur âge.
-            Voici quelques exemples de catégories :
-        </p>
+            <img src="img/hockey3.jpg" alt="Entraîneurs de hockey">
 
-        <table>
-            <tr>
-                <th>Catégorie</th>
-                <th>Âge indicatif</th>
-            </tr>
-            <tr>
-                <td>U7</td>
-                <td>Moins de 7 ans</td>
-            </tr>
-            <tr>
-                <td>U9</td>
-                <td>7 à 8 ans</td>
-            </tr>
-            <tr>
-                <td>U11</td>
-                <td>9 à 10 ans</td>
-            </tr>
-            <tr>
-                <td>U13</td>
-                <td>11 à 12 ans</td>
-            </tr>
-            <tr>
-                <td>U15</td>
-                <td>13 à 14 ans</td>
-            </tr>
-            <tr>
-                <td>U18</td>
-                <td>15 à 17 ans</td>
-            </tr>
-            <tr>
-                <td>Seniors</td>
-                <td>Adultes</td>
-            </tr>
-        </table>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+            <p>
+                Le club est encadré par une équipe d'entraîneurs
+                expérimentés qui accompagnent les joueurs tout au long
+                de la saison.
+            </p>
 
-    <!-- 5. LIEU -->
-    <section id="lieu">
-        <h2>Lieu d'entraînement</h2>
+            <!-- Présentation des entraîneurs fictifs du club -->
+            <ul>
+                <li>
+                    <strong>Julien Morel :</strong>
+                    entraîneur principal des seniors.
+                    Il possède 12 ans d'expérience dans le hockey
+                    et organise les entraînements collectifs.
+                </li>
 
-        <img src="img/hockey4.jpg" alt="hockey_lieux">
-        
-        <p>
-            Les entraînements de hockey sur glace se déroulent
-            dans une patinoire.
-        </p>
+                <li>
+                    <strong>Thomas Bernard :</strong>
+                    entraîneur adjoint des catégories jeunes.
+                    Il aide les joueurs à améliorer leur technique
+                    et leur maîtrise du palet.
+                </li>
 
-        <ul>
-            <li>Une surface de glace.</li>
-            <li>Des vestiaires pour les joueurs.</li>
-            <li>Des buts de hockey.</li>
-            <li>Des bancs pour les remplaçants.</li>
-        </ul>
+                <li>
+                    <strong>Antoine Lefèvre :</strong>
+                    entraîneur des gardiens de but.
+                    Il travaille les réflexes, les déplacements
+                    et les techniques d'arrêt.
+                </li>
 
-        <p><strong>Adresse :</strong> À compléter selon le club.</p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+                <li>
+                    <strong>Camille Petit :</strong>
+                    responsable de l'école de hockey.
+                    Elle accueille les débutants et accompagne
+                    les plus jeunes dans leur progression.
+                </li>
+            </ul>
 
-    <!-- 6. JOURS D'ENTRAINEMENT -->
-    <section id="jours">
-        <h2>Jours d'entraînement</h2>
+            <p>
+                Les entraîneurs organisent également des stages
+                pendant les vacances scolaires afin de permettre
+                aux joueurs de progresser.
+            </p>
 
-        <p>
-            Les entraînements sont organisés en fonction
-            de l'âge et du niveau des joueurs.
-        </p>
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
 
-        <table>
-            <tr>
-                <th>Catégorie</th>
-                <th>Jour</th>
-                <th>Horaires</th>
-            </tr>
-            <tr>
-                <td>U9</td>
-                <td>Mercredi</td>
-                <td>14h - 15h</td>
-            </tr>
-            <tr>
-                <td>U11</td>
-                <td>Mardi</td>
-                <td>17h - 18h</td>
-            </tr>
-            <tr>
-                <td>U13</td>
-                <td>Mercredi</td>
-                <td>16h - 17h30</td>
-            </tr>
-            <tr>
-                <td>U15</td>
-                <td>Jeudi</td>
-                <td>18h - 19h30</td>
-            </tr>
-            <tr>
-                <td>Seniors</td>
-                <td>Lundi et mercredi</td>
-                <td>20h - 22h</td>
-            </tr>
-        </table>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+        <!-- 4. CATEGORIES D'AGE -->
+        <section id="categories">
+            <h2>4. Les catégories</h2>
 
-    <!-- 7. CALENDRIER DES MATCHS -->
-    <section id="calendrier">
-        <h2>Calendrier des matchs</h2>
-        
-        <img src="img/hockey5.jpg" alt="hockey_match">
-        
-        <p>
-            Voici un exemple de calendrier des prochaines rencontres.
-        </p>
+            <p>
+                Le club accueille des joueurs de tous les âges,
+                des débutants aux joueurs confirmés.
+                Les catégories sont réparties selon l'âge des participants.
+            </p>
 
-        <table>
-            <tr>
-                <th>Date</th>
-                <th>Rencontre</th>
-                <th>Lieu</th>
-                <th>Heure</th>
-            </tr>
-            <tr>
-                <td>15/11/2026</td>
-                <td>Club A - Club B</td>
-                <td>Domicile</td>
-                <td>14h</td>
-            </tr>
-            <tr>
-                <td>22/11/2026</td>
-                <td>Club C - Club A</td>
-                <td>Extérieur</td>
-                <td>16h</td>
-            </tr>
-            <tr>
-                <td>29/11/2026</td>
-                <td>Club A - Club D</td>
-                <td>Domicile</td>
-                <td>15h</td>
-            </tr>
-            <tr>
-                <td>06/12/2026</td>
-                <td>Club E - Club A</td>
-                <td>Extérieur</td>
-                <td>14h</td>
-            </tr>
-        </table>
+            <!-- Tableau des catégories et des âges indicatifs -->
+            <table>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Âge indicatif</th>
+                </tr>
 
-        <p>
-            <em>Attention : ces rencontres sont fictives.</em>
-        </p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+                <tr>
+                    <td>U7</td>
+                    <td>Moins de 7 ans</td>
+                </tr>
 
-    <!-- VIDÉO -->
-    <section id="video">
-        <h2>Le hockey en vidéo</h2>
-        <p>Une vidéo pour se faire une idée du hockey sur glace.</p>
-        
-        <video class="video_sport" controls>
-            <source src="video/hockey.mp4" type="video/mp4">
-            Votre navigateur ne sait pas lire cette vidéo.
-        </video>
-        <p><a href="https://www.youtube.com/watch?v=FbCptzPuNic" target="_blank">Voir une vidéo de hockey en ligne</a></p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+                <tr>
+                    <td>U9</td>
+                    <td>7 à 8 ans</td>
+                </tr>
 
-    <!-- 8. CONTACT -->
-    <section id="contact">
-        <h2>Adresse de contact (mail)</h2>
+                <tr>
+                    <td>U11</td>
+                    <td>9 à 10 ans</td>
+                </tr>
 
-        <p>
-            Pour obtenir des renseignements sur les inscriptions,
-            les entraînements ou les compétitions, vous pouvez
-            contacter le club par courrier électronique.
-        </p>
+                <tr>
+                    <td>U13</td>
+                    <td>11 à 12 ans</td>
+                </tr>
 
-        <p>
-            <strong>E-mail :</strong>
-            <a href="mailto:contact@monclub.fr">
-                contact@hockey.fr
-            </a>
-        </p>
+                <tr>
+                    <td>U15</td>
+                    <td>13 à 14 ans</td>
+                </tr>
 
-        <p>
-            <strong>Objet :</strong> Demande de renseignements
-            ou inscription au hockey sur glace.
-        </p>
-        <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
-    </section>
+                <tr>
+                    <td>U18</td>
+                    <td>15 à 17 ans</td>
+                </tr>
+
+                <tr>
+                    <td>Seniors</td>
+                    <td>Adultes</td>
+                </tr>
+            </table>
+
+            <p>
+                Le club propose également des séances de découverte
+                pour les personnes qui souhaitent essayer le hockey
+                avant de s'inscrire.
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
+
+        <!-- 5. LIEU D'ENTRAINEMENT -->
+        <section id="lieu">
+            <h2>5. Lieu d'entraînement</h2>
+
+            <img src="img/hockey4.jpg" alt="Patinoire de hockey">
+
+            <p>
+                Les entraînements et les matchs à domicile se déroulent
+                à la patinoire fictive des Cèdres, située à Metz,
+                en Moselle.
+            </p>
+
+            <!-- Présentation des équipements de la patinoire -->
+            <ul>
+                <li>Une grande surface de glace.</li>
+                <li>Des vestiaires pour les joueurs.</li>
+                <li>Des buts et des équipements de hockey.</li>
+                <li>Des bancs pour les remplaçants.</li>
+                <li>Des gradins pour accueillir les supporters.</li>
+                <li>Un espace d'accueil pour les familles.</li>
+            </ul>
+
+            <!-- Coordonnées fictives de la patinoire -->
+            <p>
+                <strong>Nom :</strong> Patinoire des Cèdres
+            </p>
+
+            <p>
+                <strong>Adresse :</strong>
+                12 rue des Sports, 57000 Metz.
+            </p>
+
+            <p>
+                <strong>Ville :</strong> Metz, Moselle.
+            </p>
+
+            <p>
+                <strong>Accès :</strong> Parking disponible à proximité
+                de la patinoire.
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
+
+        <!-- 6. JOURS ET HORAIRES DES ENTRAINEMENTS -->
+        <section id="jours">
+            <h2>6. Jours d'entraînement</h2>
+
+            <p>
+                Les entraînements sont organisés en fonction
+                de l'âge et du niveau des joueurs.
+                Chaque catégorie dispose de plusieurs créneaux
+                dans la semaine.
+            </p>
+
+            <!-- Tableau des horaires hebdomadaires fictifs -->
+            <table>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Jour</th>
+                    <th>Horaires</th>
+                </tr>
+
+                <tr>
+                    <td>U7</td>
+                    <td>Samedi</td>
+                    <td>9h00 - 10h00</td>
+                </tr>
+
+                <tr>
+                    <td>U9</td>
+                    <td>Mercredi</td>
+                    <td>14h00 - 15h00</td>
+                </tr>
+
+                <tr>
+                    <td>U11</td>
+                    <td>Mardi</td>
+                    <td>17h00 - 18h00</td>
+                </tr>
+
+                <tr>
+                    <td>U13</td>
+                    <td>Mercredi</td>
+                    <td>16h00 - 17h30</td>
+                </tr>
+
+                <tr>
+                    <td>U15</td>
+                    <td>Jeudi</td>
+                    <td>18h00 - 19h30</td>
+                </tr>
+
+                <tr>
+                    <td>U18</td>
+                    <td>Vendredi</td>
+                    <td>18h30 - 20h00</td>
+                </tr>
+
+                <tr>
+                    <td>Seniors</td>
+                    <td>Lundi et mercredi</td>
+                    <td>20h00 - 22h00</td>
+                </tr>
+            </table>
+
+            <p>
+                Les joueurs doivent arriver environ 20 minutes
+                avant le début de leur séance afin de se préparer
+                et de s'équiper.
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
+
+        <!-- 7. CALENDRIER DES MATCHS -->
+        <section id="calendrier">
+            <h2>7. Calendrier des matchs</h2>
+
+            <img src="img/hockey5.jpg" alt="Match de hockey sur glace">
+
+            <p>
+                Voici un exemple du calendrier des rencontres
+                du club pour la saison 2026-2027.
+            </p>
+
+            <!-- Tableau des matchs fictifs de la saison -->
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Rencontre</th>
+                    <th>Lieu</th>
+                    <th>Heure</th>
+                </tr>
+
+                <tr>
+                    <td>22/11/2026</td>
+                    <td>Metz Hockey - Nancy Glace</td>
+                    <td>Domicile</td>
+                    <td>14h00</td>
+                </tr>
+
+                <tr>
+                    <td>29/11/2026</td>
+                    <td>Strasbourg Hockey - Metz Hockey</td>
+                    <td>Extérieur</td>
+                    <td>16h00</td>
+                </tr>
+
+                <tr>
+                    <td>06/12/2026</td>
+                    <td>Metz Hockey - Épinal Givre</td>
+                    <td>Domicile</td>
+                    <td>15h00</td>
+                </tr>
+
+                <tr>
+                    <td>13/12/2026</td>
+                    <td>Thionville Hockey - Metz Hockey</td>
+                    <td>Extérieur</td>
+                    <td>14h00</td>
+                </tr>
+
+                <tr>
+                    <td>20/12/2026</td>
+                    <td>Metz Hockey - Luxembourg Ice</td>
+                    <td>Domicile</td>
+                    <td>17h00</td>
+                </tr>
+            </table>
+
+            <!-- Précise que les informations sont inventées -->
+            <p>
+                <em>
+                    Attention : les rencontres, les clubs et les horaires
+                    présentés sont fictifs et servent uniquement
+                    d'exemple pour cette page.
+                </em>
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
+
+        <!-- 8. VIDEO DE PRESENTATION -->
+        <section id="video">
+            <h2>8. Le hockey en vidéo</h2>
+
+            <p>
+                Découvrez une vidéo permettant de mieux comprendre
+                le hockey sur glace, ses règles et son déroulement.
+            </p>
+
+            <!-- Lecteur vidéo intégré dans la page -->
+            <video class="video_sport" controls>
+                <!-- Chemin vers le fichier vidéo local au format MP4 -->
+                <source src="video/hockey.mp4" type="video/mp4">
+
+                <!-- Message de remplacement si la vidéo ne fonctionne pas -->
+                Votre navigateur ne sait pas lire cette vidéo.
+            </video>
+
+            <!-- Lien vers une vidéo externe sur YouTube -->
+            <p>
+                <a href="https://www.youtube.com/watch?v=FbCptzPuNic"
+                   target="_blank" rel="noopener noreferrer">
+                    Voir une vidéo de hockey en ligne
+                </a>
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
+
+        <!-- 9. CONTACT : coordonnées fictives du club -->
+        <section id="contact">
+            <h2>9. Nous contacter</h2>
+
+            <p>
+                Vous souhaitez inscrire votre enfant, découvrir le hockey
+                ou obtenir des informations sur les entraînements ?
+                Notre équipe est disponible pour répondre à vos questions.
+            </p>
+
+            <!-- Adresse électronique fictive réservée à l'exemple -->
+            <p>
+                <strong>E-mail :</strong>
+                <a href="mailto:contact@metz-hockey.example">
+                    contact@metz-hockey.example
+                </a>
+            </p>
+
+            <p>
+                <strong>Téléphone :</strong>
+                03 00 00 00 00 (numéro fictif).
+            </p>
+
+            <p>
+                <strong>Responsable des inscriptions :</strong>
+                Sophie Laurent.
+            </p>
+
+            <p>
+                <strong>Objet conseillé :</strong>
+                Demande de renseignements ou inscription au hockey
+                sur glace.
+            </p>
+
+            <p>
+                Nous accueillons les débutants comme les joueurs
+                expérimentés tout au long de la saison.
+            </p>
+
+            <p class="retour_menu"><a href="#menu">Retour au menu</a></p>
+        </section>
 
     </main>
 
-    <!-- PIED DE PAGE -->
+    <!-- PIED DE PAGE : informations générales et navigation -->
     <footer>
         <p>Hockey sur glace - Maison des Ligues de Lorraine</p>
-        <p><a href="#menu">Retour au menu</a> | <a href="#haut">Retour en haut</a></p>
+
+        <!-- Liens pour revenir au menu ou tout en haut de la page -->
+        <p>
+            <a href="#menu">Retour au menu</a> |
+            <a href="#haut">Retour en haut</a>
+        </p>
+
+        <!-- Mention indiquant le caractère fictif des coordonnées -->
+        <p>Exemple de site scolaire - Informations fictives.</p>
     </footer>
 
-    <!-- BOUTON RETOUR EN HAUT : affiché par js/main.js -->
+    <!-- BOUTON RETOUR EN HAUT : affichage éventuellement géré par JavaScript -->
     <a href="#haut" id="bouton_haut" class="bouton_haut">⬆ Haut</a>
 
+    <!-- Chargement du fichier JavaScript pour les fonctionnalités interactives -->
     <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>
